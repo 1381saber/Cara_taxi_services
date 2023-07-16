@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    src: url("./fonts/Vazirmatn-Regular.ttf") format(ttf);
+  }
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    src: url("./fonts/Vazirmatn-Light.ttf") format(ttf);
+  }
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    src: url("./fonts/Vazirmatn-Medium.ttf") format(ttf);
+  }
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    src: url("./fonts/Vazirmatn-Bold.ttf") format(ttf);
+  } 
+
+body{
+    font-family: Vazir;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

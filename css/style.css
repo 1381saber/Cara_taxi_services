@@ -1,0 +1,27 @@
+:root { 
+    --color-main: #ff5722;
+    --color-navBar: white;
+    --color-second-dark: #fff6f2;
+    --color-second-light: #ffa589;  
+    --color-body : #333333;
+    --color-heading : #000;
+
+}
+html{
+    font-size: 62.5%;
+}
+body { 
+    color: var(--color-body);
+    font-size: 1.4rem ;
+}
+
+h1,h2,h3 {
+    color: var(--color-heading);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2.2rem;
+}
