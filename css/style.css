@@ -9,14 +9,15 @@
     --color-white : white;
     --color-main-light: #ff7a50
 }
+/* ---------------------------- */
 html{
     font-size: 62.5%;
 }
+/* ---------------------------- */
 body { 
     color: var(--color-body);
     font-size: 1.4rem ;
 }
-
 h1,h2,h3 {
     color: var(--color-heading);
     font-weight: 700;
@@ -40,7 +41,7 @@ h2 {
         font-size: 3.5rem;
     }
 }
-
+/* ---------------------------- */
 .btn {
      cursor: pointer;
      outline: 0;
@@ -76,7 +77,7 @@ h2 {
         font-size: 2rem;
     }
 }
-
+/* ---------------------------- */
 .badge {
     display: inline-block;
     margin-top: 20px;
@@ -100,7 +101,7 @@ h2 {
         font-size: 1.4rem;
     }
 }
-
+/* ---------------------------- */
 .list {
     list-style: none;
      font-size: 2rem;
@@ -115,7 +116,7 @@ h2 {
     background: url(/images/Tick-Square.svg) no-repeat;
     background-size: 32px;
     background-position: right bottom;
-    padding-right: 3rem;
+    padding-right: 3.2rem;
     margin-bottom: 1.25rem;
     color: var(--color-heading);
 }
@@ -126,26 +127,42 @@ h2 {
     }
     
 }
-
-
+/* ---------------------------- */
 .block-plan {
     display: grid;
-    gap: 2rem 3rem;
+    gap: 9rem 6rem;
+    margin: 7rem;
+    justify-content: center;
+    grid-template-columns:  repeat(auto-fit,minmax(250px,340px));
+    margin-left: 2rem;
+    margin-right: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 .plan {
-    max-width: 600;
+    max-width: 450px;
     font-size: 1.8rem;
-    
+    margin-right: 1rem;
+    margin-left: 1rem;
+    transition: all 0.2s ease-out; 
+}
+
+.plan:hover {
+    transform: scale(1.08);
+}
+
+.plan__popular:hover{
+    transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px) {
-    .block-plan{
-        grid-template-columns:  repeat(3 , 1fr);
-    }
+     
+     .plan .btn--block {
+        font-size: 1.8rem;
+     }
     
 }
-
+/* ---------------------------- */
 .card__header, .card__body {
     padding: 3rem 2.5rem;
     color: var(--color-white);
@@ -180,8 +197,16 @@ h2 {
     margin-top:  2rem;
 }
 
+.plan__popular {
+    transform: scale(1.1);
+}
+
 .card__main .card__header {
     background-color: var(--color-main-light);
 }
-
-
+/* ---------------------------- */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
