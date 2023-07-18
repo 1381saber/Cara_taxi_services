@@ -16,7 +16,8 @@ html{
 /* ---------------------------- */
 body { 
     color: var(--color-body);
-    font-size: 1.4rem ;
+    font-size: 2.2rem ;
+    line-height: 1.6;
 }
 h1,h2,h3 {
     color: var(--color-heading);
@@ -32,7 +33,7 @@ h2 {
 
 @media screen and (min-width: 1024px) {
     body { 
-        font-size: 1.8rem;
+        font-size: 2.2rem;
     }
     h1 {
         font-size: 5rem;
@@ -210,3 +211,103 @@ h2 {
     margin: 0 auto;
     margin-top: 6rem;
 }
+/* ---------------------------- */
+.feature {
+    display:  grid;
+     
+}
+
+.feature .btn {
+    padding: 1.5rem 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature__image img > {
+    width: 70%;
+    height: auto;
+    
+}
+
+.feature__image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+.feature__text {
+    margin-bottom: 3rem;
+}
+
+.img2 {
+    width: 544px;
+    height: 351px;
+}
+@media screen and (min-width:1024px) {
+    .feature {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .feature__image {
+        order: 2;
+    }
+
+    .feature__detail {
+        order: 1;
+    }
+    
+    .feature__detail2 {
+        order: 2;
+    }
+
+    .feature__image2 {
+        order: 1;
+    }
+}
+/* -------------contact us-------------- */
+.contact-us {
+    display: grid;
+     
+}
+
+.contact-us__map {
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+    .contact-us {
+        grid-template-areas: "address form" "map form" "icons form";
+        grid-template-columns: 70fr 30fr;
+    }
+    
+    .contact-us__form {
+        grid-area: form;
+    }
+    .contact-us__map {
+        grid-area: map;
+        display: block;
+    }
+    .contact-us__icons {
+        grid-area: address;
+    }
+    .contact-us__social {
+        grid-area: icons;
+    }
+}
+/* -----------------ICONS--------------- */
+.icon {
+    width: 40px;
+    height: 40px ;
+}
+
+.icon-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-bottom: 2rem;
+  } 
