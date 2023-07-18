@@ -18,20 +18,12 @@
     font-style: normal;
     src: url("./fonts/Vazirmatn-Bold.ttf") format(ttf);
   } 
+@font-face {
+    font-family: Cara;
+    font-style: normal;
+    src: url(/fonts/IRAN-Rounded.woff) format(woff);
+  }
 
-body{
-    font-family: Vazir;
+body,button{
+    font-family: Cara;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
