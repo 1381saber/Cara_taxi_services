@@ -1,3 +1,13 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
+}
+
 :root {
   --color-main: #ff5722;
   --color-navBar: white;
@@ -213,6 +223,8 @@ h2 {
 
 .feature {
   display: grid;
+  padding: 2rem;
+  gap: 0rem 6rem;
 }
 
 .feature .btn {
@@ -634,7 +646,8 @@ textarea {
 }
 .nav__item .btn {
   padding: 1rem 3rem;
-  max-width: 400px;
+  max-width: 800px;
+  width: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -661,7 +674,7 @@ textarea {
   .nav__item .btn {
     padding: 1rem 3rem;
     margin-left: 3rem;
-    width: 80px;
+    width: 150px;
   }
 }
 
@@ -727,6 +740,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   max-width: 300px;
+  margin-top: 55rem;
 }
 .intro-btn h1 {
   font-size: 2.5rem;
@@ -792,6 +806,8 @@ textarea {
     max-width: 500px;
     padding: 0 25px;
     border-radius: 20px;
+    margin-top: 40rem;
+
   }
   .intro-btn h1 {
     font-size: 5rem;
@@ -806,7 +822,7 @@ textarea {
   .banner-phone {
     display: block;
     height: auto;
-    width: 650px;
+    width: 760px;
     position: absolute;
     left: 10%;
     bottom: -50%;
@@ -814,3 +830,109 @@ textarea {
   }
 }
 /* -------------- services ---------------- */
+.services__tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: auto;
+  padding: 5px 0 15px;
+}
+.services__tabs a {
+  display: block;
+  text-decoration: none;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100px;
+}
+.services__tabs .tab > p {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+.services__tabs img {
+  max-width: 85px;
+}
+
+.services__tabs .tab {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.services__tabs .tab:hover {
+  opacity: 1;
+}
+.services__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.services .feature__title {
+  margin: 1.5rem 0;
+}
+.services .feature__image {
+  display: none;
+}
+
+.tab-content {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services .feature__detail {
+  width: 100%;
+}
+
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: flex;
+}
+.tab.active {
+  opacity: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .services__tabs .tab > p {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+  .services__tabs img {
+    width: 100%;
+  }
+  .services__title {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+  }
+  .services .feature__image {
+    display: block;
+  }
+  .services .feature__detail {
+    width: 50%;
+  }
+  .services .feature__image {
+    width: 45%;
+  }
+  .services .feature__image img {
+    width: 100%;
+  }
+}
+
+.block {
+  padding: 4rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  .block {
+    padding: 6rem 2rem;
+  }
+
+  .block-heading{
+    margin-top: 6rem;
+  }
+}
+.block-heading {
+  margin-top: 35rem;
+}
