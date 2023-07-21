@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -18,16 +17,22 @@
   --color-white: white;
   --color-main-light: #ff7a50;
 }
+
+
 /* -------------HTML--------------- */
 html {
   font-size: 62.5%;
 }
+
+
 /* ------------BODY---------------- */
 body {
   color: var(--color-body);
   font-size: 2.2rem;
   line-height: 1.6;
 }
+
+
 h1,
 h2,
 h3 {
@@ -38,6 +43,7 @@ h3 {
 h1 {
   font-size: 2.5rem;
 }
+
 h2 {
   font-size: 2.2rem;
 }
@@ -46,13 +52,16 @@ h2 {
   body {
     font-size: 2.2rem;
   }
+
   h1 {
     font-size: 5rem;
   }
+
   h2 {
     font-size: 3.5rem;
   }
 }
+
 /* ------------BUTTONS---------------- */
 .btn {
   cursor: pointer;
@@ -85,10 +94,12 @@ h2 {
   .btn {
     font-size: 1.6rem;
   }
+
   .btn--block {
     font-size: 2rem;
   }
 }
+
 /* -------------BADGE--------------- */
 .badge {
   display: inline-block;
@@ -113,6 +124,7 @@ h2 {
     font-size: 1.4rem;
   }
 }
+
 /* -------------LISTS--------------- */
 .list {
   list-style: none;
@@ -132,12 +144,14 @@ h2 {
   margin-bottom: 1.25rem;
   color: var(--color-heading);
 }
+
 @media screen and (min-width: 1024px) {
   .list--tick .list__item {
     font-size: 1.8rem;
     margin-bottom: 2rem;
   }
 }
+
 /* --------------PLAN-------------- */
 .block-plan {
   display: grid;
@@ -171,6 +185,7 @@ h2 {
     font-size: 1.8rem;
   }
 }
+
 /* --------------CARD-------------- */
 .card__header,
 .card__body {
@@ -181,6 +196,7 @@ h2 {
 .card__header {
   background-color: var(--color-second-dark);
 }
+
 .card {
   box-shadow: 0 0 20px 12px #ccc;
   overflow: hidden;
@@ -198,6 +214,7 @@ h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
+
 .plan__cycle {
   font-size: 1.4rem;
 }
@@ -214,6 +231,7 @@ h2 {
 .card__main .card__header {
   background-color: var(--color-main-light);
 }
+
 /* ---------------ARTICLE FEATUR------------- */
 .container {
   max-width: 1140px;
@@ -239,7 +257,7 @@ h2 {
   transform: scale(1.1);
 }
 
-.feature__image img > {
+.feature__image img> {
   width: 70%;
   height: auto;
 }
@@ -251,6 +269,7 @@ h2 {
   margin-right: 3rem;
   margin-left: 3rem;
 }
+
 .feature__text {
   margin-bottom: 3rem;
 }
@@ -259,6 +278,7 @@ h2 {
   width: 544px;
   height: 351px;
 }
+
 @media screen and (min-width: 1024px) {
   .feature {
     grid-template-columns: repeat(2, 1fr);
@@ -280,6 +300,7 @@ h2 {
     order: 1;
   }
 }
+
 /* -------------CONTACT US-------------- */
 .contact-us {
   display: grid;
@@ -294,24 +315,28 @@ h2 {
 
 @media screen and (min-width: 768px) {
   .contact-us {
-    grid-template-areas: "address form" "map form" "icons form";
+    grid-template-areas: "address form""map form""icons form";
     grid-template-columns: 70fr 30fr;
   }
 
   .contact-us__form {
     grid-area: form;
   }
+
   .contact-us__map {
     grid-area: map;
     display: block;
   }
+
   .contact-us__icons {
     grid-area: address;
   }
+
   .contact-us__social {
     grid-area: icons;
   }
 }
+
 /* -----------------ICONS--------------- */
 .icon {
   width: 24px;
@@ -355,6 +380,7 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
   }
+
   .contact-us__icons .icon-holder {
     flex-direction: column;
   }
@@ -386,6 +412,7 @@ h2 {
   .contact-us__social {
     justify-content: flex-end;
   }
+
   .contact-us__social .icon-container {
     margin-left: 2rem;
   }
@@ -404,6 +431,7 @@ h2 {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   padding: 1rem;
 }
+
 .form-wrapper h3 {
   margin-bottom: 5.2rem;
   text-align: center;
@@ -422,9 +450,11 @@ textarea {
   outline: 0;
   border: 0;
 }
+
 textarea {
   resize: none;
 }
+
 ::placeholder {
   font-size: 1.2rem;
   color: #333;
@@ -440,9 +470,11 @@ textarea {
   font-family: "Cara";
   margin-bottom: 1.5rem;
 }
+
 .form-wrapper textarea {
   font-family: Vazir;
 }
+
 .form-wrapper textarea {
   border-radius: 5px;
 }
@@ -458,6 +490,7 @@ textarea {
   transition: all 1.2s ease-out;
   transform: scale(1.04);
 }
+
 /* -----------  Radio button ------------ */
 .select-type {
   display: flex;
@@ -477,6 +510,7 @@ textarea {
 .select-type :not(:last-child) {
   margin-left: 2rem;
 }
+
 .select-control label {
   cursor: pointer;
   width: 92%;
@@ -490,6 +524,7 @@ textarea {
   position: relative;
   transition: all 0.3s ease-out;
 }
+
 .select-control label::before {
   position: absolute;
   content: "";
@@ -504,12 +539,12 @@ textarea {
   transition: all 0.3s ease-out;
 }
 
-.select-control input[type="radio"]:checked + label {
+.select-control input[type="radio"]:checked+label {
   border: 2px solid var(--color-main);
   color: var(--color-main);
 }
 
-.select-control input[type="radio"]:checked + label::before {
+.select-control input[type="radio"]:checked+label::before {
   box-shadow: 0 0 0 2px var(--color-main);
   background-color: var(--color-main);
 }
@@ -531,9 +566,11 @@ textarea {
   flex-direction: column;
   margin-bottom: 5rem;
 }
+
 .footer__item {
   margin-bottom: 2.5rem;
 }
+
 .footer__item a {
   text-decoration: none;
   font-size: 1.4rem;
@@ -542,9 +579,11 @@ textarea {
   display: block;
   transition: all 0.3s ease-out;
 }
+
 .footer__item a:hover {
   color: var(--color-main);
 }
+
 .footer__item h6 {
   font-size: 1.8rem;
   font-weight: bold;
@@ -556,6 +595,7 @@ textarea {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .footer__enemad {
   background-color: #fff;
   border-radius: 10px;
@@ -563,6 +603,7 @@ textarea {
   max-width: 100px;
   margin-left: 1rem;
 }
+
 .footer__enemad img {
   width: 100%;
   height: auto;
@@ -574,6 +615,7 @@ textarea {
     flex-wrap: wrap;
     margin-top: 3rem;
   }
+
   .footer__item {
     margin-bottom: 0;
     margin-left: 2rem;
@@ -589,6 +631,7 @@ textarea {
 .main-header {
   background-color: var(--color-navBar);
 }
+
 .nav {
   margin-top: 1rem;
   display: flex;
@@ -597,6 +640,7 @@ textarea {
   flex-wrap: wrap;
   padding: 1rem 2rem;
 }
+
 .nav__list {
   width: 100%;
   display: flex;
@@ -623,7 +667,8 @@ textarea {
   margin-top: 1rem;
   border-bottom: 1px solid #ccc;
 }
-.nav__item > a {
+
+.nav__item>a {
   text-decoration: none;
   color: #444;
   display: block;
@@ -631,7 +676,7 @@ textarea {
   transition: all 0.3s ease-out;
 }
 
-.nav__item > a:hover {
+.nav__item>a:hover {
   color: var(--color-main);
 }
 
@@ -640,10 +685,11 @@ textarea {
   border: 0;
 }
 
-.nav__item.cta > a {
+.nav__item.cta>a {
   color: #fff;
   font-size: 1.4rem;
 }
+
 .nav__item .btn {
   padding: 1rem 3rem;
   max-width: 800px;
@@ -654,9 +700,11 @@ textarea {
   .nav {
     padding: 0 2rem;
   }
+
   .nav__toggler {
     display: none;
   }
+
   .nav__list {
     flex-direction: row;
     align-items: center;
@@ -664,6 +712,7 @@ textarea {
     opacity: 1;
     max-height: 100%;
   }
+
   .nav__item {
     margin-right: 8rem;
     margin-top: 0;
@@ -682,6 +731,7 @@ textarea {
 .nav__toggler {
   cursor: pointer;
 }
+
 .bar {
   width: 25px;
   height: 3px;
@@ -712,10 +762,12 @@ textarea {
   width: 100%;
   height: 478px;
 }
+
 .hero-section .banner-img {
   width: 100%;
   height: auto;
 }
+
 .hero-wrapper {
   position: absolute;
   top: 0;
@@ -726,14 +778,13 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+
 .intro-btn {
   position: absolute;
   border-radius: 20px;
-  background-image: linear-gradient(
-    51deg,
-    rgba(23, 26, 60, 0.7) 5%,
-    rgba(23, 26, 60, 0.3) 95%
-  );
+  background-image: linear-gradient(51deg,
+      rgba(23, 26, 60, 0.7) 5%,
+      rgba(23, 26, 60, 0.3) 95%);
   padding: 16px;
   border-radius: 12px;
   display: flex;
@@ -742,16 +793,19 @@ textarea {
   max-width: 300px;
   margin-top: 55rem;
 }
+
 .intro-btn h1 {
   font-size: 2.5rem;
   color: #fff;
   margin-top: 0;
 }
+
 .intro-btn h2 {
   font-size: 1.6rem;
   color: #fff;
   margin-bottom: 2.5rem;
 }
+
 .intro-btn__passenger {
   background-color: #fff;
   border-radius: 12px;
@@ -759,6 +813,7 @@ textarea {
   padding: 14px;
   width: 220px;
 }
+
 .intro-wrapper {
   display: flex;
   flex-direction: column;
@@ -771,17 +826,21 @@ textarea {
   align-items: center;
   justify-content: space-around;
 }
+
 .intro-btn__passenger p {
   font-size: 1.2rem;
 }
-.intro-btn__passenger > i {
+
+.intro-btn__passenger>i {
   color: #000;
 }
+
 .intro-btn__passenger.driver-intro {
   border: 2px solid #fff;
   background-color: rgba(23, 26, 60, 0.5) !important;
   color: #fff;
 }
+
 .banner-phone {
   display: none;
   position: absolute;
@@ -796,29 +855,34 @@ textarea {
     justify-content: flex-start;
     right: 0;
   }
+
   .intro-wrapper {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
+
   .intro-btn {
     width: 500px;
     max-width: 500px;
     padding: 0 25px;
     border-radius: 20px;
     margin-top: 40rem;
-
   }
+
   .intro-btn h1 {
     font-size: 5rem;
   }
+
   .intro-btn h2 {
     font-size: 2rem;
     font-weight: 400;
   }
+
   .intro-btn__passenger p {
     font-size: 1.5rem;
   }
+
   .banner-phone {
     display: block;
     height: auto;
@@ -829,6 +893,7 @@ textarea {
     top: 0;
   }
 }
+
 /* -------------- services ---------------- */
 .services__tabs {
   display: flex;
@@ -837,6 +902,7 @@ textarea {
   overflow: auto;
   padding: 5px 0 15px;
 }
+
 .services__tabs a {
   display: block;
   text-decoration: none;
@@ -846,10 +912,12 @@ textarea {
   align-items: center;
   max-width: 100px;
 }
-.services__tabs .tab > p {
+
+.services__tabs .tab>p {
   margin-top: 1.5rem;
   font-size: 1.2rem;
 }
+
 .services__tabs img {
   max-width: 85px;
 }
@@ -859,9 +927,11 @@ textarea {
   cursor: pointer;
   transition: all 0.2s ease-out;
 }
+
 .services__tabs .tab:hover {
   opacity: 1;
 }
+
 .services__title {
   font-size: 2rem;
   font-weight: 700;
@@ -871,6 +941,7 @@ textarea {
 .services .feature__title {
   margin: 1.5rem 0;
 }
+
 .services .feature__image {
   display: none;
 }
@@ -881,6 +952,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
 }
+
 .services .feature__detail {
   width: 100%;
 }
@@ -888,34 +960,42 @@ textarea {
 .tab-content {
   display: none;
 }
+
 .tab-content.active {
   display: flex;
 }
+
 .tab.active {
   opacity: 1;
 }
 
 @media screen and (min-width: 1024px) {
-  .services__tabs .tab > p {
+  .services__tabs .tab>p {
     margin-top: 1rem;
     font-size: 1.4rem;
   }
+
   .services__tabs img {
     width: 100%;
   }
+
   .services__title {
     font-size: 3.5rem;
     margin-bottom: 30px;
   }
+
   .services .feature__image {
     display: block;
   }
+
   .services .feature__detail {
     width: 50%;
   }
+
   .services .feature__image {
     width: 45%;
   }
+
   .services .feature__image img {
     width: 100%;
   }
@@ -924,15 +1004,17 @@ textarea {
 .block {
   padding: 4rem 2rem;
 }
+
 @media screen and (min-width: 768px) {
   .block {
     padding: 6rem 2rem;
   }
 
-  .block-heading{
+  .block-heading {
     margin-top: 6rem;
   }
 }
+
 .block-heading {
   margin-top: 35rem;
 }
