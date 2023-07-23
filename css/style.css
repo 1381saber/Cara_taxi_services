@@ -19,7 +19,6 @@
   --avatar-size: 50px;
 }
 
-
 /* -------------HTML--------------- */
 html {
   font-size: 62.5%;
@@ -551,7 +550,6 @@ textarea {
 }
 
 /* -------------- FOOTER -------------- */
-
 .main-footer {
   background-color: #000;
   color: #fff;
@@ -1092,7 +1090,6 @@ textarea {
 .block-plan {
   margin-top: 10px;
 }
-
 /* AVATAR SECTION */
 
 .avatar-group {
@@ -1141,7 +1138,6 @@ textarea {
   margin-right: 5px;
   display: inline-block;
 }
-
 /* SELEECT TYPE WEBINAR SECTION */
 
 .select-type {
